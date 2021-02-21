@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GetLocationHourly</string>
+    <string name="heading_latitude">Latitude :</string>
+    <string name="heading_longitude">Longitude :</string>
+    <string name="heading_time">Last updated on :</string>
+</resources>
