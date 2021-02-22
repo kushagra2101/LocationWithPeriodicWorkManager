@@ -1,5 +1,6 @@
 package com.kushagragoel.getlocationhourly.ui
 
+import android.text.format.DateFormat
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,10 @@ class LocationItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     fun onBind(location: LocationEntity) {
         latValue.text = location.latitude.toString()
         longValue.text = location.longitude.toString()
-        timeValue.text = location.time.toString()
+        timeValue.text = convertDate(location.time.toString(),"dd/MM/yyyy hh:mm:ss")
+    }
+
+    private fun convertDate(dateInMilliseconds: String, dateFormat: String?): String {
+        return DateFormat.format(dateFormat, dateInMilliseconds.toLong()).toString()
     }
 }

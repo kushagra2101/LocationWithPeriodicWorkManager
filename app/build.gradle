@@ -19,6 +19,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -73,5 +78,8 @@ dependencies {
 
     // For Kotlin use paging-runtime-ktx
     def paging_version = "2.1.2"
-    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    //location gms dependency
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
 }

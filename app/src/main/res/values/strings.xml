@@ -3,4 +3,7 @@
     <string name="heading_latitude">Latitude :</string>
     <string name="heading_longitude">Longitude :</string>
     <string name="heading_time">Last updated on :</string>
+    <string name="home_page_text">Click on button to start/stop location worker.</string>
+    <string name="button_text_stop">Stop</string>
+    <string name="button_text_start">Start</string>
 </resources>

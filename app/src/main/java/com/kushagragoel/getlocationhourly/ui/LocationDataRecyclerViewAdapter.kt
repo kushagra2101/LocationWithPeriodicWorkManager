@@ -9,8 +9,8 @@ import com.kushagragoel.getlocationhourly.database.LocationEntity
 
 class LocationDataRecyclerViewAdapter: PagedListAdapter<LocationEntity, LocationItemViewHolder>(DIFF_CALLBACK){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LocationItemViewHolder {
-//        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler_view, parent, false)
-        return LocationItemViewHolder(parent)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler_view, parent, false)
+        return LocationItemViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: LocationItemViewHolder, position: Int) {
